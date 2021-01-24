@@ -3,4 +3,5 @@
 - [Default Credentials](https://github.com/shyim/shopware-docker/wiki/Default-Credentials)
 - [Configuration](https://github.com/shyim/shopware-docker/wiki/Configuration)
 - [Command-List](https://github.com/shyim/shopware-docker/wiki/Command-List)
+- [Enabling XDebug](https://github.com/shyim/shopware-docker/wiki/Enable-XDebug)
 - [FAQ](https://github.com/shyim/shopware-docker/wiki/FAQ)
