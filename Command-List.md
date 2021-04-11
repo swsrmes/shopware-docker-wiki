@@ -14,6 +14,7 @@
 * `swdc mysql-watch`               Watches the mysql process list
 * `swdc open`                      Opens the given shop in browser
 * `swdc rsnap`                     Loads back a created snapshot
+* `swdc redis-clear`               Clears all redis databases
 * `swdc shell-root`                Joins into the CLI container as root user
 * `swdc shell`                     Joins into the CLI container as normal user
   * `--php-version PHPVERSION`     As optional parameter to specify [PHPVERSION](#phpversion)
