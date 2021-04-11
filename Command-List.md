@@ -16,7 +16,7 @@
 * `swdc rsnap`                     Loads back a created snapshot
 * `swdc shell-root`                Joins into the CLI container as root user
 * `swdc shell`                     Joins into the CLI container as normal user
-  * `--php-version PHPVERSION`     As optional parameter to specify [PHPVERSION](phpversion)
+  * `--php-version PHPVERSION`     As optional parameter to specify [PHPVERSION](#phpversion)
 * `swdc snap`                      Creates a new snapshot
 * `swdc update-images`             Updates used docker images
 * `swdc up`                        Starts the containers
