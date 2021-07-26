@@ -13,4 +13,4 @@
 
 # Windows
 
-See [Guide](https://shyim.me/blog/shopware-environment-windows)
+See [Guide](https://shyim.me/blog/shopware-development-environment-windows/)
