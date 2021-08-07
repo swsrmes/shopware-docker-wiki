@@ -5,4 +5,5 @@
 - [Command-List](https://github.com/shyim/shopware-docker/wiki/Command-List)
 - [Enabling XDebug](https://github.com/shyim/shopware-docker/wiki/Enable-XDebug)
 - [Custom docker configuration for app](https://github.com/shyim/shopware-docker/wiki/Custom-docker-configuration-for-app-served-from-Code-directory)
+- [Custom services](https://github.com/shyim/shopware-docker/wiki/Custom-services)
 - [FAQ](https://github.com/shyim/shopware-docker/wiki/FAQ)
