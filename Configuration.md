@@ -81,21 +81,3 @@ This enables a hacky way to get XDebug Running on Windows with WSL2
 * VHOST_**FOLDER_NAME**_CERT_NAME
   * This can be used to define another ssl certificate for this vhost.
   * Example: `shop`. You will need following files  `~/.config/swdc/ssl/shop.crt` and `~/.config/swdc/ssl/shop.key`
-
-# Starting your own Services (Like second MySQL Container)
-
-Create a new file `$HOME/.config/swdc/services.yml`
-
-```yml
-version: '3.9'
-services:
-  mysql8:
-    image: mysql:8
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-    volumes:
-      - mysql8-data:/var/lib/mysql
-    command: ["mysqld", "--default-authentication-plugin=mysql_native_password"]
-volumes:
-  mysql8-data:
-```
