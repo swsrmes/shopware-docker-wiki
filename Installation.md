@@ -2,7 +2,7 @@
 
 ## Requirements:
 - Docker
-- Docker-Compose
+- Docker-Compose (Follow https://docs.docker.com/compose/install/ to install a updated version)
 - Your Linux User UID is 1000 (Run `id -u`)
 
 ## Linux Install
