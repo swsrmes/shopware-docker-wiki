@@ -1,3 +1,5 @@
+# TODO make new
+
 * Create a new folder in `~/Code/` with your project name and checkout a Shopware installation or use `swdc create-project [Folder Name]`
    * The installation folder can be:
       * https://github.com/shopware/platform
