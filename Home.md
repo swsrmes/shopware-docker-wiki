@@ -5,3 +5,4 @@ Welcome to the shopware-docker wiki!
 - [Global Configuration of Shopware-Docker](https://github.com/shyim/shopware-docker/wiki/Global-Configuration)
 - [Project-specific Configuration](https://github.com/shyim/shopware-docker/wiki/Project-specific-Configuration)
 - [Default services and credentials](https://github.com/shyim/shopware-docker/wiki/Default-services)
+- [PhpStorm Setup](https://github.com/shyim/shopware-docker/wiki/PhpStorm-Setup)
