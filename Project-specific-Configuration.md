@@ -33,6 +33,21 @@ After replacing your Folder Name and running `swdc up` XDebug should be activate
 
 To get XDebug started debugging, you need to enable it using the Chrome Extension: https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc. After this, you should get a debug request in your IDE.
 
+## Changing PHP configuration
+
+Create a `php.ini` file in your project root with your configuration and restart swdc with `swdc down && swdc up`
+
+## Installing custom PHP extensions
+
+Create a `.swdc/Dockerfile` file in your project like
+
+```
+FROM ghcr.io/shyim/shopware-docker/6/nginx:php74
+
+RUN install-php-extensions ssh2
+```
+[See](https://github.com/mlocati/docker-php-extension-installer) for all options
+
 ## Using custom docker container as app container
 
 Shopware docker detects automatically for your Shopware / Symfony application and provides complete images for any PHP version. Sometimes it is necessary to add a custom docker image, like when a Shopware App server is written in another language. To archive this, you can override in your project the docker configuration.
