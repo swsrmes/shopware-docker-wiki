@@ -1,11 +1,17 @@
 ## Which images and tags are available?
 
-* [shopware/shopware-classic-nginx](https://hub.docker.com/r/shyim/shopware-classic-nginx/tags)
-* [shopware/shopware-platform-nginx](https://hub.docker.com/r/shyim/shopware-platform-nginx/tags)
-* [shopware/shopware-classic-apache](https://hub.docker.com/r/shyim/shopware-classic-apache/tags)
-* [shopware/shopware-platform-apache](https://hub.docker.com/r/shyim/shopware-platform-apache/tags)
-* [shopware/shopware-mysql](https://hub.docker.com/r/shyim/shopware-mysql/tags)
-* [shopware/shopware-cli](https://hub.docker.com/r/shyim/shopware-cli/tags)
+### Shopware 6
+* [ghcr.io/shyim/shopware-docker/6/nginx](https://github.com/shyim/shopware-docker/pkgs/container/shopware-docker%2F6%2Fnginx)
+* [ghcr.io/shyim/shopware-docker/6/apache](https://github.com/shyim/shopware-docker/pkgs/container/shopware-docker%2F6%2Fapache)
+
+### Shopware 5
+* [ghcr.io/shyim/shopware-docker/5/nginx](https://github.com/shyim/shopware-docker/pkgs/container/shopware-docker%2F5%2Fnginx)
+* [ghcr.io/shyim/shopware-docker/5/apache](https://github.com/shyim/shopware-docker/pkgs/container/shopware-docker%2F5%2Fapache)
+
+### Others
+
+* [ghcr.io/shyim/shopware-docker/cli](https://github.com/shyim/shopware-docker/pkgs/container/shopware-docker%2Fcli)
+* [ghcr.io/shyim/shopware-docker/mysql](https://github.com/shyim/shopware-docker/pkgs/container/shopware-docker%2Fmysql)
 
 ## Can I use PSH in this Setup?
 
