@@ -27,4 +27,4 @@ See [Guide](https://shyim.me/blog/shopware-development-environment-windows/)
 
 # Installing Shopware in it
 
-[Install Shopware](https://github.com/shyim/shopware-docker/wiki/Usage)
+[Install Shopware](https://github.com/shyim/shopware-docker/wiki/Installation-Shopware)
