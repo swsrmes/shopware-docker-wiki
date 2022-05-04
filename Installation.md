@@ -5,7 +5,7 @@
 - The Linux User UID is `1000`. (Run `id -u` to check)
 - The Linux user needs to be in the docker group
     - Command: `sudo usermod -aG docker $USER`
-    - Logout and Login again
+    - Restart your system
 - Following packages were installed: `dialog` and `jq`
     - Ubuntu/Debian: `sudo apt install dialog jq`
     - Arch: `sudo pacman -S dialog jq`
