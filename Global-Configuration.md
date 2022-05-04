@@ -76,9 +76,26 @@ WSL_XDEBUG_TUNNEL=false
 # MYSQL_DATA_DIR=/var/lib/swdc/mysql
 ```
 
-# Blackfire
+## Blackfire
 
 `ENABLE_BLACKFIRE` Enables Blackfire Service other Variables can be obtained from the Blackfire Account
 You still need to enable for a Virtual Host Blackfire like
 
 `VHOST_[FOLDER_NAME_UPPER_CASE]_IMAGE=ghcr.io/shyim/shopware-docker/6/nginx:php74-blackfire`
+
+## Starting your own Services (Like second MySQL Container)
+
+Create a new file `$HOME/.config/swdc/services.yml`
+
+```yml
+version: '3.9'
+services:
+  mysql8:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysql8-data:/var/lib/mysql
+    command: ["mysqld", "--default-authentication-plugin=mysql_native_password"]
+volumes:
+  mysql8-data:
