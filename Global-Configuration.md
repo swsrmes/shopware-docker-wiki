@@ -79,6 +79,6 @@ WSL_XDEBUG_TUNNEL=false
 # Blackfire
 
 `ENABLE_BLACKFIRE` Enables Blackfire Service other Variables can be obtained from the Blackfire Account
-You need still to enable for a Virtual Host Blackfire like
+You still need to enable for a Virtual Host Blackfire like
 
 `VHOST_[FOLDER_NAME_UPPER_CASE]_IMAGE=ghcr.io/shyim/shopware-docker/6/nginx:php74-blackfire`
