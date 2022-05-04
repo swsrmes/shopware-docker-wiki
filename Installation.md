@@ -1,5 +1,3 @@
-# Linux
-
 ## Requirements:
 - Linux or Windows. macOS is currently not supported due [VirtioFS issue](https://github.com/docker/for-mac/issues/6243)
 - Docker
