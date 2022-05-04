@@ -14,3 +14,10 @@ Some configurations must be done directly in the `.config/swdc/env` file like us
   * This can be used to define another SSL certificate for this vhost.
   * Example: `shop`. You will need following files  `~/.config/swdc/ssl/shop.crt` and `~/.config/swdc/ssl/shop.key`
 
+### Enabling Blackfire
+
+If you have enabled Blackfire in the Global Configuration, you have to enable it too for the actual project like:
+```
+VHOST_[FOLDER_NAME_UPPER_CASE]_IMAGE=ghcr.io/shyim/shopware-docker/6/nginx:php74-blackfire
+```
+in the `.config/swdc/env` file
