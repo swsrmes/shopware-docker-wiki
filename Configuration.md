@@ -1,3 +1,5 @@
+## Todo make new
+
 The configuration of swdc will be saved at `$HOME/.config/swdc/env` after each change `swdc up` need to be executed.
 
 # DEFAULT_DOMAIN
