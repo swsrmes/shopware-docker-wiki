@@ -32,3 +32,22 @@ VHOST_[FOLDER_NAME_UPPER_CASE]_IMAGE=ghcr.io/shyim/shopware-docker/6/nginx:php74
 After replacing your Folder Name and running `swdc up` XDebug should be activated.
 
 To get XDebug started debugging, you need to enable it using the Chrome Extension: https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc. After this, you should get a debug request in your IDE.
+
+## Using custom docker container as app container
+
+Shopware docker detects automatically for your Shopware / Symfony application and provides complete images for any PHP version. Sometimes it is necessary to add a custom docker image, like when a Shopware App server is written in another language. To archive this, you can override in your project the docker configuration.
+
+To override it, create a `.swdc/service.yml` in your project folder in your code directory. The content of this file will be appended to the service definition. Here is an example file:
+
+```yaml
+image: my-app
+environment:
+  # The domain where it should be available
+  # See https://github.com/nginx-proxy/nginx-proxy for all options
+  VIRTUAL_HOST: my-app.dev.localhost
+# Default docker-compose build a docker image of that path
+build:
+  context: ~/Code/random-go-app/
+```
+
+On the next run, `swdc up` will take this configuration and run that. Tip: You can use `swdc up --build` to let the build step rebuilt always
