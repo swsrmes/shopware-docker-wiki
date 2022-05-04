@@ -17,9 +17,3 @@
 
 * You can use http://**FOLDERNAME**.dev.localhost
 * Or use `swdc open [Folder Name]`
-
-## Can I use it on Windows / Mac?
-
-I use it regulary on Windows. I don't know so far no Mac Users
-
-## What are the passwords?
