@@ -78,10 +78,10 @@ WSL_XDEBUG_TUNNEL=false
 
 ## Blackfire
 
-`ENABLE_BLACKFIRE` Enables Blackfire Service other Variables can be obtained from the Blackfire Account
-You still need to enable for a Virtual Host Blackfire like
+The option`ENABLE_BLACKFIRE`
 
-`VHOST_[FOLDER_NAME_UPPER_CASE]_IMAGE=ghcr.io/shyim/shopware-docker/6/nginx:php74-blackfire`
+Enables Blackfire Agent
+You still need to enable for a Virtual Host Blackfire like [described here](https://github.com/shyim/shopware-docker/wiki/Project-specific-Configuration#enabling-blackfire)
 
 ## Starting your own Services (Like second MySQL Container)
 
