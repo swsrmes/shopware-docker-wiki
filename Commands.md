@@ -5,65 +5,89 @@ Most commands are used in the following way `swdc command project`, swdc tries t
 Like when the target project is Shopware 5 Git installation, to include base + classic or on Shopware 6, base + platform. 
 
 
-### Module: base - Always available commands
+### Module: base
 
 | Command                                  | Description                                                       |
 | ---------------------------------------- | ----------------------------------------------------------------- |
-| swdc up                                  | Starts the containers                                             |
-| swdc down                                | Stops the containers                                              |
-| swdc configure                           | Opens the swdc configuration file                                 |
-| swdc help                                |                                                                   |
-| swdc create-project <project>            | Creates a new Shopware 6 Installation                             |
-| swdc log <project>                       | Shows the log of the specified container                          |
-| swdc console <project> <symfony-command> | Executes the symfony console for the given project                |
-| swdc debug-logs                          | Please use this command to collect information for a GitHub Issue |
-| swdc drop <name>                         | Drops the database                                                |
-| swdc es-clear                            | Deletes everything from Elasticsearch server                      |
-| swdc mysql                               | Starts the mysql client on the cli container                      |
-| swdc mysql-watch                         | Watches the mysql process list                                    |
-| swdc open <project>                      | Opens the given shop in browser                                   |
-| swdc snap <project> [name]               | Creates a new database snapshot                                   |
-| swdc rsnap <project> [name]              | Loads back a created database snapshot                            |
-| swdc redis-clear                         | Clears all redis databases                                        |
-| swdc shell-root                          | Joins into the CLI container as root user                         |
-| swdc shell --php-version 80 | Joins into the CLI container as normal user                     |
-| swdc update-images                       | Updates used docker images                                        |
+| `swdc command-list` |  | 
+| `swdc completion` |  | 
+| `swdc configure` | Opens the configuration .env file with your favourite editor | 
+| `swdc console` | Executes the symfony console for the given project | 
+| `swdc create-project` | Creates a new Shopware 6 Installation | 
+| `swdc debug-logs` | Please use this command to collect informations for a Github Issue | 
+| `swdc down` | Stops the containers | 
+| `swdc drop` | Drops the database | 
+| `swdc es-clear` | Deletes everything from elasticsearch server | 
+| `swdc generate-command-list` | Generates the command list for README.md | 
+| `swdc help` | Lists all commands | 
+| `swdc log` | Shows the log of the specified container | 
+| `swdc mysql-exec-watch` | Executes a every second MySQL command and shows the result | 
+| `swdc mysql-watch` | Watches the mysql process list | 
+| `swdc mysql` | Starts the mysql client on the cli container | 
+| `swdc open` | Opens the given shop in browser | 
+| `swdc pshell` | Opens a shell in the specific project | 
+| `swdc redis-clear` | Clears all redis databases | 
+| `swdc redis-cli` | Opens the Redis-CLI | 
+| `swdc rsnap` | Loads back a created snapshot | 
+| `swdc shell-root` | Joins into the cli container as root user | 
+| `swdc shell` | Joins into the cli container as normal user | 
+| `swdc snap` | Creates a new snapshot | 
+| `swdc tool-cache-clear` | Clears the tool cache | 
+| `swdc up` | Starts the containers | 
+| `swdc update-images` | Updates used docker images | 
+| `swdc varnish-clear` | Bans all varnish cache | 
+### Module: classic
 
-### Module: classic - Shopware 5
+| Command                                  | Description                                                       |
+| ---------------------------------------- | ----------------------------------------------------------------- |
+| `swdc apply <project-name>` | Applies a database fixture | 
+| `swdc build <project-name>` | Reinstalls the database | 
+| `swdc config <project-name>` | Applies fixture to the config.php | 
+| `swdc download-testimages <project-name>` | Download and extract shopware testimages | 
+| `swdc hooks <project-name>` | Fixes the hooks for git | 
+| `swdc mink <project-name>` | Starts the Browser tests | 
+| `swdc snippets <project-name>` | Reimports all snippets | 
+| `swdc test <project-name>` | Runs all tests | 
+| `swdc unit <project-name>` | Runs only unit tests | 
+| `swdc update-test <project-name>` | Simulate a update | 
+### Module: platform
 
-| Command                            | Description                                                                  |
-| ---------------------------------- | ---------------------------------------------------------------------------- |
-| swdc apply <project>               | Applies a database fixture                                                   |
-| swdc build <project>               | Reinstalls the database                                                      |
-| --without-demo-data                | As optional parameter to start without demo-data                             |
-| --without-config-patch             | As optional parameter to specify not patching the config with error-handling |
-| --mysql-host                       | As optional parameter to specify mysql-host                                  |
-| swdc config <project> <config>     | Applies fixture to the config.php                                            |
-| swdc download-testimages <project> | Download and extract shopware testimages                                     |
-| swdc hooks <project>               | Fixes the hooks for git                                                      |
-| swdc mink <project>                |                                                                              |
-| swdc snippets <project>            | Reimports all snippets                                                       |
-| swdc test <project>                | Runs all tests                                                               |
-| swdc unit <project>                | Runs only unit tests                                                         |
-| swdc update-test <project>         | Simulate an update                                                           |
+| Command                                  | Description                                                       |
+| ---------------------------------------- | ----------------------------------------------------------------- |
+| `swdc admin-build <project-name>` | Builds the administration and executes assets install | 
+| `swdc admin-init <project-name>` | Installs required npm modules | 
+| `swdc admin-jest <project-name>` | Runs the Jest tests | 
+| `swdc admin-watch <project-name>` | Start the admin watcher at admin-<project>.dev.localhost | 
+| `swdc build-with-old-demo-data <project-name>` | Builds Shopware 6 with Shopware 5 Demo-Data. Requires min 6.3.5.0 | 
+| `swdc build <project-name>` | Reinstalls the database | 
+| `swdc check <project-name>` | Checks code for ci issues | 
+| `swdc config-add <project-name>` | Adds a config to config/packages | 
+| `swdc config-remove <project-name>` | Removes a config from config/packages | 
+| `swdc config-set <project-name>` | Sets a config for config/packages | 
+| `swdc queue-clear <project-name>` | Clears the enqueue queue in Shopware 6 | 
+| `swdc run <project-name>` | Runs specified command in CLI. f.e. swdc run myfolder npm install --prefix custom/plugins/MyPlugin/src/Resources | 
+| `swdc storefront-build <project-name>` | Builds the storefront | 
+| `swdc storefront-init <project-name>` | Installs required npm modules | 
+| `swdc storefront-watch <project-name>` | Recompile the storefront when changes in its resources are detected | 
+| `swdc test <project-name>` | Runs all unit tests | 
+| `swdc update <project-name>` | Updates Shopware 6 | 
+| `swdc worker-logs <project-name>` | Tail the logs of the workers | 
+| `swdc worker <project-name>` | Run the worker | 
+| `swdc admin-watch <project-name>` | Start the admin watcher at admin-<project>.dev.localhost | 
+| `swdc e2e <project-name>` | Starts the Cypress instance. Use "Storefront" as parameter when you want open that package | 
+| `swdc feature <project-name>` | Creates a file to enable Feature flags | 
+| `swdc init-test-db <project-name>` | Initializes the test database | 
+| `swdc locust <project-name>` | Starts the locust service | 
+| `swdc npm-remove <project-name>` | Deletes all node_modules folders | 
+| `swdc storefront-hot <project-name>` | Starts the Storefront Watcher | 
+| `swdc storefront-watch <project-name>` | Start the storefront watcher at storefront-<project>.dev.localhost | 
+| `swdc test <project-name>` | Run the test suite | 
+| `swdc update <project-name>` | Updates Shopware 6 | 
 
-### Module: platform - Shopware 6
+### Module: platform-b2b
 
-| Command                         | Description                                                         |
-| ------------------------------- | ------------------------------------------------------------------- |
-| swdc admin-build <project>      | Builds the administration and executes assets install               |
-| swdc admin-init <project>       | Installs required npm modules                                       |
-| swdc admin-jest <project>       |                                                                     |
-| swdc admin-watch <project>      | Start the admin watcher at port 8181                                |
-| swdc build <project>            | Reinstalls the database                                             |
-| --without-demo-data             | As optional parameter to start without demo-data                    |
-| --without-building              | As optional parameter to start without built JS                     |
-| --mysql-host                    | As optional parameter to specify mysql-host                         |
-| swdc check <project>            | Checks code for contribution issues                                 |
-| swdc storefront-build <project> | Builds the storefront                                               |
-| swdc storefront-init <project>  | Installs required npm modules                                       |
-| swdc storefront-watch <project> | Recompile the storefront when changes in its resources are detected |
-| swdc test <project>             | Runs all unit tests                                                 |
-| swdc worker <project>           | Run the worker                                                      |
-| swdc e2e <project>              |                                                                     |
-| swdc init-test-db <project>     | Initializes the test database                                       |
+| Command                                  | Description                                                       |
+| ---------------------------------------- | ----------------------------------------------------------------- |
+| `swdc b2b-add-migration <project-name>` |  | 
+| `swdc b2b-init <project-name>` |  | 
+| `swdc b2b-storefront-build <project-name>` |  | 
