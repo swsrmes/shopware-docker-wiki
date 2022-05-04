@@ -14,7 +14,7 @@
 
 - Clone the shopware-docker repository to your local machine:
     - `git clone https://github.com/shyim/shopware-docker.git ~/Documents/shopware-docker`
-- Create a symlink to your PATH `sudo ln -s /home/$USER/Documents/shopware-docker/bin/swdc /usr/local/bin/swdc`
+- Create a symlink to your PATH `sudo ln -s /home/$USER/Documents/shopware-docker/swdc /usr/local/bin/swdc`
 - Optional on Bash: Add the following to your `~/.bashrc` to have autocompletion:
     - `source ~/Documents/shopware-docker/completion.sh`
 - Start the containers `swdc up`
