@@ -11,3 +11,5 @@ Here is a quick guide to Setup PhpStorm Docker Support
 - Save it
 
 Now set the new interpeter as default for this repository and anything should work like local development
+
+As PhpStorm is broken with docker-compose v2. You have to install docker-compose switch maybe: https://github.com/docker/compose-switch
