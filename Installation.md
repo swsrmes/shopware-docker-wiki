@@ -1,5 +1,6 @@
 ## Requirements:
 - Linux or Windows. macOS is currently not supported due [VirtioFS issue](https://github.com/docker/for-mac/issues/6243)
+  - Snap installation of docker is not supported
 - Docker
 - Docker Compose v2 (Follow https://docs.docker.com/compose/install/ to install an updated version)
 - The Linux User UID is `1000`. (Run `id -u` to check)
